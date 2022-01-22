@@ -26,7 +26,6 @@ const btt = document.getElementById('btnTop')
 		  document.documentElement.scrollTop = 0;
 		})
 
-//$(".swiper-slide").slice(6, 15).hide();
 
 const swiper = new Swiper('.swiper', {
 	slidesPerView: 1,
@@ -50,6 +49,7 @@ const swiper = new Swiper('.swiper', {
 	scrollbar: {
 		el: '.swiper-scrollbar',
 	},
+
 	breakpoints: {
 		// when window width is >= 768px
 		768: {
@@ -60,14 +60,6 @@ const swiper = new Swiper('.swiper', {
 	}
 	});
 
-
-// $(".load-more-btn").on("click", function(){
-// 	$(".swiper-slide:hidden").slice(0, 1).show();
-// 	swiper.update();
-// 	if ($(".swiper-slide:hidden").length == 0) {
-// 		$(".load-more-btn").fadeOut('slow')
-// 	}
-// })
 
 function attachEvents() {
     const btnLoad = document.getElementById('loadMore');
